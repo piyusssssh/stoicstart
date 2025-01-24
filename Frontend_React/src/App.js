@@ -5,6 +5,7 @@ import { UserStatusProvider } from './userContextStatus';
 import Home from './Home';
 import UserList from './UserList';
 import About from './About';
+import Counter from './counter';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <li><Link to="/">Cards</Link></li>
           <li><Link to="/users">User List</Link></li>
           <li><Link to="/about">About</Link></li>
+          <li><Link to="/counter">Counter</Link></li>
         </ul>
       </nav>
 
@@ -32,6 +34,7 @@ function App() {
         <Route path="/home" element={<Home/>} />
         <Route path="/users" element={<UserList/>} />
         <Route path="/about" element={<About/>} />
+        <Route path="/counter" element={<Counter/>} />
       </Routes>
 
       </Router>
