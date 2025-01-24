@@ -12,9 +12,9 @@ const Counter = ()=>{
         <div style={counterStyle}>
         <h2>Redux Counter</h2>
         <p>count: {count}</p>
-        <button onClick={dispatch(increment())}>Increment</button>
-        <button onClick={dispatch(decrement())}>Decrement</button>
-        <button onClick={dispatch(reset())}>Reset</button>
+        <button onClick={()=>{dispatch(increment())}}>Increment</button>
+        <button onClick={()=>{dispatch(decrement())}}>Decrement</button>
+        <button onClick={()=>{dispatch(reset())}}>Reset</button>
     </div>
     );
 }
